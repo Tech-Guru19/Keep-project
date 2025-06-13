@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Keep</title>
+    <link rel="stylesheet" href="Keep.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="left-section">
+            <div class="burger" id="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="Keep Logo"
+                class="logo" />
+            <span class="nav-title">Keep</span>
+        </div>
+
+        <div class="search-section">
+            <span>
+                <img src="images/download (41).svg" alt="" srcset="" id="image">
+                <input type="text" placeholder="        Search" id="searchNote">
+                </span>
+        </div>
+
+        <div class="right-section">
+            <div class="iconbuttonParent">
+                <button class="icon-button"><img src="images/download (40).svg" alt=""></button>
+                <button class="icon-button"><img src="images/download (39).svg" alt="" srcset=""></button>
+                <button class="icon-button"><img src="images/download (38).svg" alt="" srcset=""></button>
+            </div>
+
+            <div id="right-section">
+                <button class="icon-button2" >
+                    <img id="lastIcon" src="images/imageye___-_al-icon.png" alt="" srcset="">
+                </button>
+                <button class="icon-button2">
+                    <img src="images/unnamed.jpg" alt="" id="account">
+                </button>
+                <button class="icon-button3" id="theme-toggle">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="one">
+        <div class="dashboard">
+            <div class="nav-item active">
+                <span class="material-symbols-outlined"><img src="images/download (42).svg" alt=""></span>
+                <span class="nav-text">Notes</span>
+            </div>
+
+            <div class="nav-item">
+                <span class="material-symbols-outlined">
+                    <img src="images/download (48).svg" alt="">
+                </span>
+                <span class="nav-text">Reminders</span>
+            </div>
+
+            <div class="nav-item">
+                <span class="material-symbols-outlined">
+                    <img src="images/download (47).svg" alt="" srcset="">
+                </span>
+                <span class="nav-text">Edit labels</span>
+            </div>
+
+            <div class="nav-item">
+                <span class="material-symbols-outlined"><img src="images/download (46).svg" alt=""></span>
+                <span class="nav-text">Archive</span>
+            </div>
+
+            <div class="nav-item">
+                <span class="material-symbols-outlined"><img src="images/download (50).svg" alt=""></span>
+                <span class="nav-text">Trash</span>
+            </div>
+        </div>
+
+
+        <div class="noteInput">
+            <input type="text" placeholder="Write Title ....." id="inputTitle">
+            <textarea name="" id="inputNote" placeholder="Write Note"></textarea>
+            <input type="file" id="acceptImg"> <br>
+            <button id="add" class="add">Add</button>
+        </div>
+    </div>
+    <div id="show" class="show">
+        
+    </div>
+    <div class="editPopOut">
+        <input type="text" name="" id="editTitle">
+        <textarea name="" id="editText"></textarea>
+        <img src="images/pexels-pixabay-163478.jpg" alt="" id="editImg">
+        <input type="file" name="" id="editImgInput">
+        <div class="editButtonParent">
+            <button onclick="cancel()">Cancel</button>
+            <button id="saveEdit">Save</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="Keep.js"></script>
+</body>
+
+</html>
